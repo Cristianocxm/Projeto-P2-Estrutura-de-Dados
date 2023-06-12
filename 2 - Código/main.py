@@ -63,7 +63,7 @@ while True:
          #   print("Nenhum animal encontrado.")
     
     elif escolha == "4":
-        pessoa = input("\nDigite o nome da pessoa: ")
+        pessoa = input("\nDigite o nome da pessoa: ").lower()
         pessoa_encontrada = prefeitura.pesquisar_pessoas(pessoa)
         if pessoa_encontrada:
             print("Pessoas: ")
