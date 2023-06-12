@@ -37,8 +37,8 @@ A estrutura do código é composta por três classes: Animal, Pessoa e Prefeitur
 
 
 
-
-A classe Animal define as características de um animal, como tipo, idade, cor, porte e particularidade. O método __init__ é o construtor da classe e é responsável por inicializar os atributos do objeto.
+[![N|Solid](https://github.com/Cristianocxm/Projeto-P2-Estrutura-de-Dados/blob/main/Imagens/ClasseAnimal.PNG)
+__A classe Animal__ define as características de um animal, como tipo, idade, cor, porte e particularidade. O método __init__ é o construtor da classe e é responsável por inicializar os atributos do objeto.
 
 
 A classe Pessoa representa uma pessoa interessada em adotar um animal. Ela possui atributos como nome, contato, espécie de interesse e preferência. Assim como na classe Animal, o método __init__ é responsável pela inicialização dos atributos.
