@@ -75,3 +75,4 @@ __O método gerar_relatorio__ percorre a lista de pessoas interessadas e, para c
 
 
 
+**Professor:** [Márcio Alexandre Dias Garrido](https://github.com/marciogarridoLaCop)
