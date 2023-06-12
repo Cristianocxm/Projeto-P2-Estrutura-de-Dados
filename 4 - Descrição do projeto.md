@@ -67,6 +67,11 @@ __O método cadastrar_pessoa_interessada__ funciona de maneira semelhante ao cad
 
 __O método pesquisar_animal__ recebe como parâmetros a espécie do animal e uma possível preferência. Ele percorre a lista de animais cadastrados na Prefeitura e verifica se o tipo do animal corresponde à espécie procurada. Se a preferência também for fornecida e não for nula, ele verifica se a particularidade do animal corresponde à preferência. Os animais que atendem aos critérios de pesquisa são adicionados a uma lista animais_encontrados, que é retornada como resultado.
 
+[![N|Solid](https://github.com/Cristianocxm/Projeto-P2-Estrutura-de-Dados/blob/main/Imagens/M%C3%A9todoPesquisarPessoa.PNG)
+
+__O método pesquisar_pessoas__ é definida com dois parâmetros: self e nome. Uma lista vazia chamada pessoas_encontradas é criada. Essa lista será usada para armazenar as pessoas encontradas que correspondem ao nome pesquisado. Em seguida, começa um loop for que percorre cada objeto pessoa na lista self.pessoas_interessadas. A variável self.pessoas_interessadas é assumida como uma lista de objetos de pessoas.
+Dentro do loop, verifica-se se o atributo nome do objeto pessoa é igual ao nome pesquisado. Isso é feito usando a expressão pessoa.nome == nome. Se for verdadeiro, significa que o nome da pessoa corresponde ao nome pesquisado. Se a condição for verdadeira, o objeto pessoa é adicionado à lista pessoas_encontradas usando o método append(). Isso significa que as pessoas encontradas serão armazenadas nessa lista. Depois de percorrer todas as pessoas na lista self.pessoas_interessadas, o loop termina e a função retorna a lista pessoas_encontradas que contém todas as pessoas encontradas com o nome pesquisado.
+
 
 [![N|Solid](https://github.com/Cristianocxm/Projeto-P2-Estrutura-de-Dados/blob/main/Imagens/MetodoGerarRelatorio.PNG)
 
@@ -74,10 +79,7 @@ __O método gerar_relatorio__ percorre a lista de pessoas interessadas e, para c
 
 
 
-[![N|Solid](https://github.com/Cristianocxm/Projeto-P2-Estrutura-de-Dados/blob/main/Imagens/M%C3%A9todoPesquisarPessoa.PNG)
 
-__O método pesquisar_pessoas__ é definida com dois parâmetros: self e nome. Uma lista vazia chamada pessoas_encontradas é criada. Essa lista será usada para armazenar as pessoas encontradas que correspondem ao nome pesquisado. Em seguida, começa um loop for que percorre cada objeto pessoa na lista self.pessoas_interessadas. A variável self.pessoas_interessadas é assumida como uma lista de objetos de pessoas.
-Dentro do loop, verifica-se se o atributo nome do objeto pessoa é igual ao nome pesquisado. Isso é feito usando a expressão pessoa.nome == nome. Se for verdadeiro, significa que o nome da pessoa corresponde ao nome pesquisado. Se a condição for verdadeira, o objeto pessoa é adicionado à lista pessoas_encontradas usando o método append(). Isso significa que as pessoas encontradas serão armazenadas nessa lista. Depois de percorrer todas as pessoas na lista self.pessoas_interessadas, o loop termina e a função retorna a lista pessoas_encontradas que contém todas as pessoas encontradas com o nome pesquisado.
 
 
 
