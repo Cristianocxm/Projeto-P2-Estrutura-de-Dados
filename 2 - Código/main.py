@@ -29,9 +29,10 @@ while True:
         porte = input("\nPorte do animal: ").lower()
         particularidade = input("\nParticularidade do animal: ").lower()
         prefeitura.cadastrar_animal(tipo, idade, cor, porte, particularidade)
-        print('='*20)
+        print()
+        print('='*42)
         print("Animal cadastrado com sucesso!")
-        print('='*20)
+        print('='*42)
 
     elif escolha == "2":
         nome = input("\nNome da pessoa interessada: ").lower()
@@ -39,7 +40,10 @@ while True:
         especie_interesse = input("\nEspécie da interesse da pessoa: ").lower()
         preferencia = input("\nPreferência da pessoa (opcional): ").lower()
         prefeitura.cadastrar_pessoa_interessada(nome, contato, especie_interesse, preferencia)
+        print()
+        print('='*42)
         print("\nPessoa interessada cadastrada com sucesso!")
+        print('='*42)
 
     elif escolha == "3":
         #especie = input("Espécie a pesquisar: ")
