@@ -74,5 +74,11 @@ __O método gerar_relatorio__ percorre a lista de pessoas interessadas e, para c
 
 
 
+__O método pesquisar_pessoas__ é definida com dois parâmetros: self e nome. Uma lista vazia chamada pessoas_encontradas é criada. Essa lista será usada para armazenar as pessoas encontradas que correspondem ao nome pesquisado. Em seguida, começa um loop for que percorre cada objeto pessoa na lista self.pessoas_interessadas. A variável self.pessoas_interessadas é assumida como uma lista de objetos de pessoas.
+Dentro do loop, verifica-se se o atributo nome do objeto pessoa é igual ao nome pesquisado. Isso é feito usando a expressão pessoa.nome == nome. Se for verdadeiro, significa que o nome da pessoa corresponde ao nome pesquisado. Se a condição for verdadeira, o objeto pessoa é adicionado à lista pessoas_encontradas usando o método append(). Isso significa que as pessoas encontradas serão armazenadas nessa lista. Depois de percorrer todas as pessoas na lista self.pessoas_interessadas, o loop termina e a função retorna a lista pessoas_encontradas que contém todas as pessoas encontradas com o nome pesquisado.
+
+
+
+
 
 **Professor:** [Márcio Alexandre Dias Garrido](https://github.com/marciogarridoLaCop)
