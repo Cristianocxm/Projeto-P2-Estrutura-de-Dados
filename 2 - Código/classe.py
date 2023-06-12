@@ -165,7 +165,7 @@ class Prefeitura:
             print(f"Animais disponíveis para >> {pessoa.nome} << :")
             contador += 1
             if len(animais_disponiveis) == 0:
-                print('Nenhum animal encontrado com essas cracterísticas.')
+                print('Nenhum animal encontrado com as características requeridas.')
             else:
                 for animal in animais_disponiveis:
                     print(f"Tipo: {animal.tipo}")
