@@ -33,11 +33,12 @@ Organização do Readme do projeto contendo Título do projeto, enunciado, parti
 
 
 
-A estrutura do código é composta por três classes: Animal, Pessoa e Prefeitura.
+A estrutura do código é composta por três classes: __Animal, Pessoa e Prefeitura.__
 
 
 
 [![N|Solid](https://github.com/Cristianocxm/Projeto-P2-Estrutura-de-Dados/blob/main/Imagens/ClasseAnimal.PNG)
+
 __A classe Animal__ define as características de um animal, como tipo, idade, cor, porte e particularidade. O método __init__ é o construtor da classe e é responsável por inicializar os atributos do objeto.
 
 
