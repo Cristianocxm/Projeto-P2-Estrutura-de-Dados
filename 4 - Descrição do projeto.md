@@ -58,7 +58,10 @@ __A classe Prefeitura__ é a principal do sistema e possui os métodos para cada
 
 __O método cadastrar_animal__ recebe como parâmetros as características de um animal e cria um objeto Animal com essas informações. Esse objeto é adicionado à lista animais da Prefeitura.
 
-O método cadastrar_pessoa_interessada funciona de maneira semelhante ao cadastrar_animal, recebendo informações sobre a pessoa interessada e criando um objeto Pessoa com esses dados. O objeto é adicionado à lista pessoas_interessadas da Prefeitura.
+
+[![N|Solid](https://github.com/Cristianocxm/Projeto-P2-Estrutura-de-Dados/blob/main/Imagens/MetodoCadastrarPessoa.PNG)
+
+__O método cadastrar_pessoa_interessada__ funciona de maneira semelhante ao cadastrar_animal, recebendo informações sobre a pessoa interessada e criando um objeto Pessoa com esses dados. O objeto é adicionado à lista pessoas_interessadas da Prefeitura.
 
 
 O método pesquisar_animal recebe como parâmetros a espécie do animal e uma possível preferência. Ele percorre a lista de animais cadastrados na Prefeitura e verifica se o tipo do animal corresponde à espécie procurada. Se a preferência também for fornecida e não for nula, ele verifica se a particularidade do animal corresponde à preferência. Os animais que atendem aos critérios de pesquisa são adicionados a uma lista animais_encontrados, que é retornada como resultado.
