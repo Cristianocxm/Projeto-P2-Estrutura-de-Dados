@@ -67,7 +67,9 @@ __O método cadastrar_pessoa_interessada__ funciona de maneira semelhante ao cad
 
 __O método pesquisar_animal__ recebe como parâmetros a espécie do animal e uma possível preferência. Ele percorre a lista de animais cadastrados na Prefeitura e verifica se o tipo do animal corresponde à espécie procurada. Se a preferência também for fornecida e não for nula, ele verifica se a particularidade do animal corresponde à preferência. Os animais que atendem aos critérios de pesquisa são adicionados a uma lista animais_encontrados, que é retornada como resultado.
 
-O método gerar_relatorio percorre a lista de pessoas interessadas e, para cada pessoa, chama o método pesquisar_animal para obter uma lista de animais disponíveis que correspondem à espécie de interesse e à preferência da pessoa. Em seguida, ele imprime as informações da pessoa (nome e contato) e, em seguida, itera sobre a lista de animais disponíveis para imprimir suas informações (tipo, idade, cor, porte e particularidade). Cada animal é separado por uma linha de traços para facilitar a leitura do relatório.
+
+
+__O método gerar_relatorio__ percorre a lista de pessoas interessadas e, para cada pessoa, chama o método pesquisar_animal para obter uma lista de animais disponíveis que correspondem à espécie de interesse e à preferência da pessoa. Em seguida, ele imprime as informações da pessoa (nome e contato) e, em seguida, itera sobre a lista de animais disponíveis para imprimir suas informações (tipo, idade, cor, porte e particularidade). Cada animal é separado por uma linha de traços para facilitar a leitura do relatório.
 
 
 
