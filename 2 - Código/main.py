@@ -57,8 +57,8 @@ while True:
             for pessoa in pessoa_encontrada:
                 print(f"Tipo: {pessoa.nome}")
                 print(f"Idade: {pessoa.contato}")
-                print(f"Cor: {pessoa.cor}")
-                print(f"Porte: {pessoa.porte}")
+                print(f"Espécie interesse: {pessoa.especie_interesse}")
+                print(f"Preferencia: {pessoa.preferencia}")
                 print("----------")
         else:
             print("Nenhum dado encontrado.")
