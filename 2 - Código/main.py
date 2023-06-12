@@ -1,6 +1,5 @@
 from classe import *
 
-
 def exibir_menu():
     print()
     print('='*42)
@@ -24,23 +23,23 @@ while True:
 
 
     if escolha == "1":
-        tipo = input('\nTipo do animal: ')
-        idade = input("\nIdade do animal: ")
-        cor = input("\nCor do animal: ")
-        porte = input("\nPorte do animal: ")
-        particularidade = input("\nParticularidade do animal: ")
+        tipo = input('\nTipo do animal: ').lower()
+        idade = input("\nIdade do animal: ").lower()
+        cor = input("\nCor do animal: ").lower()
+        porte = input("\nPorte do animal: ").lower()
+        particularidade = input("\nParticularidade do animal: ").lower()
         prefeitura.cadastrar_animal(tipo, idade, cor, porte, particularidade)
         print('='*20)
         print("Animal cadastrado com sucesso!")
         print('='*20)
 
     elif escolha == "2":
-        nome = input("Nome da pessoa interessada: ")
-        contato = input("Contato da pessoa interessada: ")
-        especie_interesse = input("Espécie de interesse da pessoa: ")
-        preferencia = input("Preferência da pessoa (opcional): ")
+        nome = input("\nNome da pessoa interessada: ").lower()
+        contato = input("\nContato da pessoa interessada: ").lower()
+        especie_interesse = input("\nEspécie da interesse da pessoa: ").lower()
+        preferencia = input("\nPreferência da pessoa (opcional): ").lower()
         prefeitura.cadastrar_pessoa_interessada(nome, contato, especie_interesse, preferencia)
-        print("Pessoa interessada cadastrada com sucesso!")
+        print("\nPessoa interessada cadastrada com sucesso!")
 
     elif escolha == "3":
         #especie = input("Espécie a pesquisar: ")
@@ -60,7 +59,7 @@ while True:
          #   print("Nenhum animal encontrado.")
     
     elif escolha == "4":
-        pessoa = input("Digite o nome da pessoa: ")
+        pessoa = input("\nDigite o nome da pessoa: ")
         pessoa_encontrada = prefeitura.pesquisar_pessoas(pessoa)
         if pessoa_encontrada:
             print("Pessoas: ")

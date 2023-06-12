@@ -40,7 +40,7 @@ class Prefeitura:
     
     #MÉTODO PARA PESQUISAR ANIMAIS POR TIPO/IDADE/COR/PORTE/PARTICULARIDADE  
     def pesquisar_animal(self):
-        print('='*35)
+        print('='*42)
         print("Menu Pesquisa Animal:")
         print("\n1. Pesquisar animal pelo tipo")
         print("\n2. Pesquisar animal pela idade")
@@ -48,92 +48,96 @@ class Prefeitura:
         print("\n4. Pesquisar animal pelo porte")
         print("\n5. Pesquisar animal pela particularidade")
         print("\n6. Sair\n")
-        print('='*35)
+        print('='*42)
         opcao = input('Escolha a opção de pesquisa: ')
         
         if opcao == '1':
-            tipo_animal = input('Digite o tipo desejado: ')
-            print("Animais encontrados:")
-            if len(self.animais) == 0:
-                print('>> Tipo não localizado <<')
-            else:
-                for a in self.animais:
-                    if a.tipo == tipo_animal:
-                        print("----------")
-                        print(f"Tipo: {a.tipo}")
-                        print(f"Idade: {a.idade}")
-                        print(f"Cor: {a.cor}")
-                        print(f"Porte: {a.porte}")
-                        print(f"Particularidade: {a.particularidade}")
-                        print("----------")
+            tipo_animal = input('\nDigite o tipo desejado: ').lower()
+            print('='*42)
+            print("\nAnimais encontrados:")
+            contador = 0 #REGISTRAR O TOTAL DE ANIMAIS ENCONTRADOS COM ESSA CARACTERÍSTICA
+            for a in self.animais:
+                if a.tipo == tipo_animal:
+                    contador += 1
+                    print("\n----------")
+                    print(f"Tipo: {a.tipo}")
+                    print(f"Idade: {a.idade}")
+                    print(f"Cor: {a.cor}")
+                    print(f"Porte: {a.porte}")
+                    print(f"Particularidade: {a.particularidade}")
+            if contador == 0:
+                print('\n>> Nenhum registro encontrado <<')
                  
         elif opcao == '2':
-            idade_animal = input('Digite a idade desejada: ')
-            print("Animais encontrados:")
-            if len(self.animais) == 0:
-                print('>> Nenhuma animal com essa idade foi encontrato <<')
-            else:
-                for a in self.animais:
-                    if a.idade == idade_animal:
-                        print("----------")
-                        print(f"Tipo: {a.tipo}")
-                        print(f"Idade: {a.idade}")
-                        print(f"Cor: {a.cor}")
-                        print(f"Porte: {a.porte}")
-                        print(f"Particularidade: {a.particularidade}")
-                        print("----------")
+            idade_animal = input('\nDigite a idade desejada: ')
+            print('='*42)
+            print("\nAnimais encontrados:")
+            contador = 0 #REGISTRAR O TOTAL DE ANIMAIS ENCONTRADOS COM ESSA CARACTERÍSTICA
+            for a in self.animais:
+                if a.idade == idade_animal:
+                    contador += 1
+                    print(f"\nTipo: {a.tipo}")
+                    print(f"Idade: {a.idade}")
+                    print(f"Cor: {a.cor}")
+                    print(f"Porte: {a.porte}")
+                    print(f"Particularidade: {a.particularidade}")
+                    print("----------")
+            if contador == 0:
+                print('\n>> Nenhum registro encontrado <<')
          
         elif opcao == '3':
-            cor_animal = input('Digite a cor desejada: ')
-            print("Animais encontrados:")
-            if len(self.animais) == 0:
-                print('>> Nenhuma animal com essa cor foi encontrato <<')
-            else:
-                for a in self.animais:
-                    if a.cor == cor_animal:
-                        print("----------")
-                        print(f"Tipo: {a.tipo}")
-                        print(f"Idade: {a.idade}")
-                        print(f"Cor: {a.cor}")
-                        print(f"Porte: {a.porte}")
-                        print(f"Particularidade: {a.particularidade}")
-                        print("----------")
+            cor_animal = input('\nDigite a cor desejada: ').lower()
+            print('='*42)
+            print("\nAnimais encontrados:")
+            contador = 0 #REGISTRAR O TOTAL DE ANIMAIS ENCONTRADOS COM ESSA CARACTERÍSTICA
+            for a in self.animais:
+                if a.cor == cor_animal:
+                    contador += 1
+                    print(f"\nTipo: {a.tipo}")
+                    print(f"Idade: {a.idade}")
+                    print(f"Cor: {a.cor}")
+                    print(f"Porte: {a.porte}")
+                    print(f"Particularidade: {a.particularidade}")
+                    print("----------")
+            if contador == 0:
+                print('\n>> Nenhum registro encontrado <<')
                     
         elif opcao == '4':
-            porte_animal = input('Digite o porte desejado: ')
-            print("Animais encontrados:")
-            if len(self.animais) == 0:
-                print('>> Nenhuma animal com esse porte foi encontrato <<')
-            else:
-                for a in self.animais:
-                    if a.porte == porte_animal:
-                        print("----------")
-                        print(f"Tipo: {a.tipo}")
-                        print(f"Idade: {a.idade}")
-                        print(f"Cor: {a.cor}")
-                        print(f"Porte: {a.porte}")
-                        print(f"Particularidade: {a.particularidade}")
-                        print("----------")
-          
+            porte_animal = input('\nDigite o porte desejado: ').lower()
+            print('='*42)
+            print("\nAnimais encontrados:")
+            contador = 0 #REGISTRAR O TOTAL DE ANIMAIS ENCONTRADOS COM ESSA CARACTERÍSTICA
+            for a in self.animais:
+                if a.porte == porte_animal:
+                    contador += 1
+                    print(f"\nTipo: {a.tipo}")
+                    print(f"Idade: {a.idade}")
+                    print(f"Cor: {a.cor}")
+                    print(f"Porte: {a.porte}")
+                    print(f"Particularidade: {a.particularidade}")
+                    print("----------")
+            if contador == 0:
+                print('\n>> Nenhum registro encontrado <<')
         
         elif opcao == '5':
-            part_animal = input('Digite a prticularidade desejada: ')
-            print("Animais encontrados:")
-            if len(self.animais) == 0:
-                print('>> Nenhuma animal com essa particulridade foi encontrato <<')
-            else:
-                for a in self.animais:
-                    if a.particularidade == part_animal:
-                        print("----------")
-                        print(f"Tipo: {a.tipo}")
-                        print(f"Idade: {a.idade}")
-                        print(f"Cor: {a.cor}")
-                        print(f"Porte: {a.porte}")
-                        print(f"Particularidade: {a.particularidade}")
-                        print("----------")
+            part_animal = input('\nDigite a prticularidade desejada: ').lower()
+            print('='*42)
+            print("\nAnimais encontrados:")
+            contador = 0 #REGISTRAR O TOTAL DE ANIMAIS ENCONTRADOS COM ESSA CARACTERÍSTICA
+            for a in self.animais:
+                if a.particularidade == part_animal:
+                    contador += 1
+                    print(f"\nTipo: {a.tipo}")
+                    print(f"Idade: {a.idade}")
+                    print(f"Cor: {a.cor}")
+                    print(f"Porte: {a.porte}")
+                    print(f"Particularidade: {a.particularidade}")
+                    print("----------")
+            if contador == 0:
+                print('\n>> Nenhum registro encontrado <<')
          
         else:
-            print('Nenhum animal foi encontrado com as características dessa pessoa.')
+            print('\nNenhum animal foi encontrado com as características dessa pessoa.')
     
     
     #MÉTODO PARA PESQUISAR PESSOAS
