@@ -54,7 +54,7 @@ __A classe Pessoa__ representa uma pessoa interessada em adotar um animal. Ela p
 __A classe Prefeitura__ é a principal do sistema e possui os métodos para cadastrar animais e pessoas interessadas, pesquisar animais disponíveis e gerar um relatório com as informações dos animais disponíveis para adoção para cada pessoa interessada. No construtor da classe Prefeitura, __init__, são criadas duas listas vazias, animais e pessoas_interessadas, que serão utilizadas para armazenar os objetos criados durante o cadastro.
 
 
-[![N|Solid] (https://github.com/Cristianocxm/Projeto-P2-Estrutura-de-Dados/blob/main/Imagens/MetodoCadastrarAnimal.PNG)
+[![N|Solid](https://github.com/Cristianocxm/Projeto-P2-Estrutura-de-Dados/blob/main/Imagens/MetodoCadastrarAnimal.PNG)
 
 __O método cadastrar_animal__ recebe como parâmetros as características de um animal e cria um objeto Animal com essas informações. Esse objeto é adicionado à lista animais da Prefeitura.
 
